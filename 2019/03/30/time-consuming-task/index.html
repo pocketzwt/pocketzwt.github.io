@@ -14,19 +14,18 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="上面的图片许多Web开发同学，肯定都遇到过，504 Time-out。出现原因是请求处理时间太长，服务器收不到处理的响应。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/3Aw76yYvDTxjxWJJT7RBhDvOV2okGRHJNFMkVmlZKy2D9kOricv1d46TAx7sJ8kJZxKCS0RF4DGBlaVcbctvQZw/0?wx_fmt=jpeg">
-<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/3Aw76yYvDTxjxWJJT7RBhDvOV2okGRHJg7IMLMnPetZzC1ibcA8f0XNrArZFvjMoZZtoy1Gz2ibQiaIjibIHUUrHbg/0?wx_fmt=jpeg">
+<meta property="og:image" content="http://1.z9ls.com/t6/701/1555164234x1822611239.jpg">
 <meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/3Aw76yYvDTxmczQpQvziah96uloCVdhaSeKqcDuNPibypSWPBBy7D75lTdjJIPzHkE50EwhJL4OAlSLeH9ZYiaRkw/0?wx_fmt=png">
 <meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/3Aw76yYvDTxmczQpQvziah96uloCVdhaSeKqcDuNPibypSWPBBy7D75lTdjJIPzHkE50EwhJL4OAlSLeH9ZYiaRkw/0?wx_fmt=png">
-<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/3Aw76yYvDTxjxWJJT7RBhDvOV2okGRHJJZic87Jd1U8vNV2YRSRjO7luicjn0mQPWKibrdUuXqIt9DhiaAYJ9WupLA/0?wx_fmt=png">
+<meta property="og:image" content="http://1.z9ls.com/t6/701/1555164283x1822611239.jpg">
 <meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/3Aw76yYvDTxmczQpQvziah96uloCVdhaSeKqcDuNPibypSWPBBy7D75lTdjJIPzHkE50EwhJL4OAlSLeH9ZYiaRkw/0?wx_fmt=png">
-<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/3Aw76yYvDTxjxWJJT7RBhDvOV2okGRHJGvpvBBvHfSDymc8vAR5ood576eMYkLDYEJotSCbglwiaFtSPxtr2cOQ/0?wx_fmt=png">
+<meta property="og:image" content="http://1.z9ls.com/t6/701/1555164302x1822611239.jpg">
 <meta property="og:image" content="https://i.screenshot.net/5pmp4uv">
-<meta property="og:updated_time" content="2019-04-13T13:26:25.596Z">
+<meta property="og:updated_time" content="2019-04-13T14:05:27.541Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="504 Time-out，耗时任务怎么办？">
 <meta name="twitter:description" content="上面的图片许多Web开发同学，肯定都遇到过，504 Time-out。出现原因是请求处理时间太长，服务器收不到处理的响应。">
-<meta name="twitter:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/3Aw76yYvDTxjxWJJT7RBhDvOV2okGRHJNFMkVmlZKy2D9kOricv1d46TAx7sJ8kJZxKCS0RF4DGBlaVcbctvQZw/0?wx_fmt=jpeg">
+<meta name="twitter:image" content="http://1.z9ls.com/t6/701/1555164234x1822611239.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -95,11 +94,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/3Aw76yYvDTxjxWJJT7RBhDvOV2okGRHJNFMkVmlZKy2D9kOricv1d46TAx7sJ8kJZxKCS0RF4DGBlaVcbctvQZw/0?wx_fmt=jpeg" alt="504">  </p>
-<p>上面的图片许多Web开发同学，肯定都遇到过，504 Time-out。出现原因是请求处理时间太长，服务器收不到处理的响应。</p>
+        <p>上面的图片许多Web开发同学，肯定都遇到过，504 Time-out。出现原因是请求处理时间太长，服务器收不到处理的响应。</p>
 <a id="more"></a>
 <p>最近工作中，正好有个任务，网页上传ZIP包文件，再把ZIP解压后每个文件转存到CDN资源上，供用户下载查看。面对这个需求，最简单的一个方式就是multipart/form-data post上传zip包，然后服务端解压，一个个文件上传到CDN上，最后返回给前端200状态码。具体流程如下图：</p>
-<div align="center"><br><br><img src="https://mmbiz.qpic.cn/mmbiz_jpg/3Aw76yYvDTxjxWJJT7RBhDvOV2okGRHJg7IMLMnPetZzC1ibcA8f0XNrArZFvjMoZZtoy1Gz2ibQiaIjibIHUUrHbg/0?wx_fmt=jpeg" alt="图一"><br><br></div>
+<div align="center"><br><br><img src="http://1.z9ls.com/t6/701/1555164234x1822611239.jpg" alt="图一"><br><br></div>
 
 <p>上面的方式看上去很美好，开发起来很快。一般刚工作的同学，经常会这样做，自己曾经也这样干过。还记得当时需求是：批量上传薪酬信息。人事给一个Excel文件，我把一行行用户数据插入数据库。上线后，刚开始人事同学用得很开心，可随着公司人数上涨，上千人之后，发现就频繁的504了。更加麻烦的是，看到504之后，人事同学还会再次上传，这时候重复数据又出来了。所以这个实现方法问题非常大。那么怎么进行优化呢？</p>
 <p align="center"><strong>多线程处理</strong></p>
@@ -112,7 +110,7 @@
 
 <p><img src="https://mmbiz.qpic.cn/mmbiz_png/3Aw76yYvDTxmczQpQvziah96uloCVdhaSeKqcDuNPibypSWPBBy7D75lTdjJIPzHkE50EwhJL4OAlSLeH9ZYiaRkw/0?wx_fmt=png" alt></p>
 <p>这种方法，在zip包上传后，先不解压，一个个文件不上传，把zip资源直接转存到CDN上，然后把资源的URL写入一张DB表中。写一个定时任务job，定时扫表，解压，批量处理上传。详细如下图：</p>
-&lt;div align=”center&gt;<br><br><img src="https://mmbiz.qpic.cn/mmbiz_png/3Aw76yYvDTxjxWJJT7RBhDvOV2okGRHJJZic87Jd1U8vNV2YRSRjO7luicjn0mQPWKibrdUuXqIt9DhiaAYJ9WupLA/0?wx_fmt=png" alt="图二"><br><br>
+&lt;div align=”center&gt;<br><br><img src="http://1.z9ls.com/t6/701/1555164283x1822611239.jpg" alt="图二"><br><br>
 
 <p>这里的DB表，需要有一个status状态位，标识处理情况。比如1表示待处理，10表示处理完成。定时任务读取任务就去读取status等于1的情况，上传完成之后，改写成10。</p>
 <p>这个方法的好处是把图一中最耗时的第3步上传步骤，移除掉。工程实现上，也很容易，配合linux服务器的crontab，省去开发调度系统的麻烦，部署非常容易。<br>可这个方法也有很明显的缺点，最大的问题就是重复执行的问题。比如任务是每5分钟执行一次，任务执行时间又超过了5分钟，这时候重复执行的问题就出现了。由此还会带来资源（DB、文件等）争抢，如果代码的容错性没有做好，很容易引入一些很难复现的bug。因此，许多大公司都会自研任务调度器，来避免定时任务的重复执行。</p>
@@ -120,7 +118,7 @@
 
 <p><img src="https://mmbiz.qpic.cn/mmbiz_png/3Aw76yYvDTxmczQpQvziah96uloCVdhaSeKqcDuNPibypSWPBBy7D75lTdjJIPzHkE50EwhJL4OAlSLeH9ZYiaRkw/0?wx_fmt=png" alt></p>
 <p>上面定时任务的方式，已经很好的把上传任务从前台解耦。照着这个解耦的思想，非常适合引入异步消息的方式来解决这个问题。zip包资源上传到CDN、发送一条任务给消息队列。消费者服务消费任务，解压、上传一个个文件。详细如下图：</p>
-<div align="center"><br><br><img src="https://mmbiz.qpic.cn/mmbiz_png/3Aw76yYvDTxjxWJJT7RBhDvOV2okGRHJGvpvBBvHfSDymc8vAR5ood576eMYkLDYEJotSCbglwiaFtSPxtr2cOQ/0?wx_fmt=png" alt="图三"><br><br></div>
+<div align="center"><br><br><img src="http://1.z9ls.com/t6/701/1555164302x1822611239.jpg" alt="图三"><br><br></div>
 
 <p>这里引入了消息队列，常见的有Kafka、ActiveMQ、RabbitMQ等消息中间件。可如果消息中间件难保不会出现丢消息的情况，比如网络抖动等情况。所以这时候需要做消息补偿。最简单的就是引入一个定时任务，定时扫瞄DB状态表，如果发现状态还没有处理，再次发起消息，让消费者进行补偿消费。</p>
 <p>总结下，面对耗时任务，常见的处理手段如下：</p>
@@ -137,7 +135,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/03/30/time-consuming-task/" data-id="cjufj3p3u0001wefydcfbotg8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/03/30/time-consuming-task/" data-id="cjufkow6m0001a6fy9m9xco0p" class="article-share-link">Share</a>
       
       
     </footer>

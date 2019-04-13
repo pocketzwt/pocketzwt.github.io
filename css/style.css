@@ -523,7 +523,7 @@ body {
 }
 .article-category {
   float: left;
-  line-height: 1em;
+  line-height: 1.2em;
   color: #ccc;
   text-shadow: 0 1px #fff;
   margin-left: 8px;
